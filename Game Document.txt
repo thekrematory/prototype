@@ -1,0 +1,15 @@
+Fly ship to landing pad avoiding obsticles and projectiles.
+
+Levels
+------
+1. Farm level
+2. City level
+3. Underwater level
+4. Wind level
+5. Military level
+
+Vector art cutscenes between levels
+
+Details
+---------
+broken buildings with pipes using particles
