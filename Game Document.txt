@@ -3,13 +3,28 @@ Fly ship to landing pad avoiding obsticles and projectiles.
 Levels
 ------
 1. Farm level
+-helicopter looking over barn
 2. City level
 3. Underwater level
 4. Wind level
 5. Military level
+
+To Do:
+
+Adjust ground color to pallet color
+
+
+
+
+
 
 Vector art cutscenes between levels
 
 Details
 ---------
 broken buildings with pipes using particles
+
+
+story ideas
+----------
+Alien wakes up late has to get to mothership
