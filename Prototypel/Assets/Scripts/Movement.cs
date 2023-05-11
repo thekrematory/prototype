@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
 	[SerializeField] float mainThrustSpeed;
 	[SerializeField] float rotationSpeed;
 	[SerializeField] AudioClip mainThrustSound;
+	[SerializeField] ParticleSystem mainThrustPasticles;
 
 	Rigidbody rb;
 	AudioSource audioS;
@@ -51,11 +52,17 @@ public class Movement : MonoBehaviour
 			{
 				audioS.PlayOneShot(mainThrustSound);
 			}
+
+			if(!mainThrustPasticles.isPlaying)
+			{
+				mainThrustPasticles.Play();
+			}
 		}
 
 		else
 		{
 			audioS.Stop();
+			mainThrustPasticles.Stop();
 		}
 	}
 }
