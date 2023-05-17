@@ -23,12 +23,12 @@ public class Collisions : MonoBehaviour
 	{
 		if(Input.GetKey(KeyCode.J))
 		{
-			LoadNextLevel();
+			//LoadNextLevel();
 		}
 
 		if(Input.GetKey(KeyCode.C)) 
 		{
-			isTransitioning = true;
+			//isTransitioning = true;
 		}
 	}
 

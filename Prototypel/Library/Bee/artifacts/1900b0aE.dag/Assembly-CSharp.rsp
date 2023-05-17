@@ -358,7 +358,9 @@
 "Assets/Scripts/Collisions.cs"
 "Assets/Scripts/Movement.cs"
 "Assets/Scripts/Oscillate.cs"
+"Assets/Scripts/QuitApplication.cs"
 "Assets/Scripts/RotateObject.cs"
+"Assets/Scripts/StormMovement.cs"
 -langversion:9.0
 
 /deterministic
