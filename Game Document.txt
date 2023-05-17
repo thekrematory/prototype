@@ -1,32 +1,27 @@
+to do:
+
+
+
+
+
+Levels:
+1.Over
+2.Between
+3.rotating
+4.oscillating
+5.land on moving pad
+
+
+use OBS to record screen
+
+
+
 Fly ship to landing pad avoiding obsticles and projectiles.
 
-Levels
-------
-1. Farm level
--helicopter looking over barn
-2. City level
-3. Underwater level
-4. Wind level
-5. Military level
-
-To Do:
-
-Adjust ground color to pallet color
 
 
+Credits:
 
-
-
-
-Vector art cutscenes between levels
-
-Details
----------
-broken buildings with pipes using particles
-
-
-story ideas
-----------
-Alien wakes up late has to get to mothership
-Aliens drunk
-Gains attention along the way
+"Space Jazz" Kevin MacLeod (incompetech.com)
+Licensed under Creative Commons: By Attribution 4.0 License
+http://creativecommons.org/licenses/by/4.0/

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Collisions : MonoBehaviour
 {
@@ -18,12 +19,16 @@ public class Collisions : MonoBehaviour
 		audioS = GetComponent<AudioSource>();
 	}
 
-	private void Update()
+	void Update()
 	{
-		if(Input.GetKeyDown(KeyCode.J)) 
+		if(Input.GetKey(KeyCode.J))
 		{
-			Debug.Log("Starting Method");
-			audioS.PlayOneShot(explosionSound);
+			LoadNextLevel();
+		}
+
+		if(Input.GetKey(KeyCode.C)) 
+		{
+			isTransitioning = true;
 		}
 	}
 
@@ -60,6 +65,8 @@ public class Collisions : MonoBehaviour
 		audioS.PlayOneShot(explosionSound);
 
 		deathParticles.Play();
+
+		Invoke("ReloadLevel", 2f);
 	}
 
 	void WinSequence()
@@ -72,5 +79,28 @@ public class Collisions : MonoBehaviour
 		audioS.PlayOneShot(winSound);
 
 		winParticles.Play();
+
+		Invoke("LoadNextLevel", 2f);
+	}
+
+	void LoadNextLevel()
+	{
+		int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+		int nextScene = currentScene + 1;
+
+		if(nextScene == SceneManager.sceneCountInBuildSettings)
+		{
+			nextScene = 0;
+		}
+
+		SceneManager.LoadScene(nextScene);
+	}
+
+	void ReloadLevel()
+	{
+		int currentScene = SceneManager.GetActiveScene().buildIndex;
+
+		SceneManager.LoadScene(currentScene);
 	}
 }
